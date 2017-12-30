@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Image Classifier</title>
+<link href="{{ url_for('static', filename='css/main.min.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/gb.css') }}" rel="stylesheet" type="text/css">
+</head>
+<nav class="popout">
+<ul>
+<li>
+<div id="nav-icon">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</li>
+<li>Built by:</li>
+<li>M.V.Sashi Kiran<br>(Kn8MnL8)</li>
+</ul>
+</nav>
+<div class="mobile-trigger">
+<i class="fa fa-bars"></i>
+</div>
+<div class="mobile-bg"></div>
+<ul class="mobile-popout">
+<li>Built by:</li>
+<li>M.V.Sashi Kiran<br>(Kn8MnL8)</li>
+</ul>
+<body id="home" class="fade">
+<canvas id="geometry"></canvas>
+<div id="content">
+<div class="section middle">
+<div class="slide" data-anchor="main">
+<div class="container">
+<h2>IMAGE<br>CLASSIFIER</h2><br><br>
+<form method="post" enctype=multipart/form-data>
+<input type="file" class="button" required="required" name="file" id="file" accept="image/*;capture=camera"/><br><br>
+<input type="submit" class="button" value="Classify"/>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3-alpha.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fullpage.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.min.js') }}"></script>
+</body>
+</html>
